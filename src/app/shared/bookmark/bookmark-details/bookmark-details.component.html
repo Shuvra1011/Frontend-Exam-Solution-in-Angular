@@ -1,0 +1,14 @@
+<div class="bookmark-detail card" *ngIf="category">
+    <div class="bookmark-detail__row" >
+        <span class="bookmark-detail__row__label">Title:</span>
+        <span class="bookmark-detail__row__value">{{(selectedBookmark.title)?selectedBookmark.title: "Not found"}}</span>
+    </div>
+    <div class="bookmark-detail__row">
+        <span class="bookmark-detail__row__label">URL:</span>
+        <span class="bookmark-detail__row__value">{{(selectedBookmark.url)?selectedBookmark.url:"Not found"}}</span>
+    </div>
+    <div class="bookmark-detail__row">
+        <span class="bookmark-detail__row__label">Title:</span>
+        <span class="bookmark-detail__row__value">{{category.title}}</span>
+    </div>
+</div>

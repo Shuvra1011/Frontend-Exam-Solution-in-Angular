@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="heading">
+    <h1>Bookmark Manager</h1>
+    <button class="" mat-raised-button color="primary" (click)="openBookmarkForm()">
+      Add Bookmark
+    </button>
+  </div>
+  <div class="main">
+    <div class="category-view">
+        <div style="margin-bottom: 2em  ;" *ngFor="let category of categories$| async">
+            <h2>{{ category.title }}</h2>
+            <bookmark-list [categoryId]="category.id"></bookmark-list>
+        </div>
+ 
+    </div>
+    <div class="bookmar-details-view" >
+        <bookmark-details ></bookmark-details>
+    </div>
+  </div>
+</div>

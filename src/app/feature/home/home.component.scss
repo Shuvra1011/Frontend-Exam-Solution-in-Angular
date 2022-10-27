@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    .heading {
+        display: flex;
+        justify-content: center;
+        padding: 2em 0em;
+        margin-bottom: 1em;
+        background-color: #f1f5f9;
+        h1 {
+            color: rgba(#000, 0.8);
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-right: 4em;
+        }
+    }
+    .main {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5em;
+        margin-inline: auto;
+        .category-view {
+            height: 80%;
+            overflow-y: scroll;
+        }
+    }
+}

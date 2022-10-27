@@ -1,0 +1,11 @@
+
+    <div class="card" style="margin-right: 2em;">
+        <div style="height: 220px;  overflow-x: hidden; ">
+            <div class="row" *ngFor="let bookmark of filteredBookmarks$|async">
+                <a [href]="bookmark.url" target="_blank">{{bookmark.title}}</a>
+                <button mat-flat-button color="primary" (click)="onDetailsClick(bookmark.id)">Details</button>
+            </div>
+        </div>
+            
+        </div>
+        

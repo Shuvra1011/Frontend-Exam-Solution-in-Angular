@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    // margin-bottom: .5em;
+    padding: 0.8em;
+    padding-left: 2em;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    a{
+        margin: 0;
+        font-weight: 500;
+        color: rgba(#000, .8);
+        width: 50%;
+        text-decoration: none;
+    }
+}
+
+
